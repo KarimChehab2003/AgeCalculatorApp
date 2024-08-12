@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  src: url("../assets/fonts/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.date-input {
+  --bs-focus-ring-color: #b278ff !important;
+  --bs-focus-ring-width: 1px !important;
+  font-family: "Poppins-ExtraBold", sans-serif !important;
+}
+
+.date-input::placeholder {
+  color: var(--bs-secondary);
+}
+
+.calculateAgeButton:active {
+  background-color: #151515 !important;
+}
+
+@media (max-width: 575.5px) {
+  .calculateAgeButton {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  hr {
+    margin: calc((1rem * 3.2)) 0px;
+  }
+
+  .age-result p {
+    font-size: 50px !important;
+  }
+}

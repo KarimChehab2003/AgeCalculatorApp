@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="px-3" style="background-color: #f0f0f0;">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh; height: 100%; max-width: 700px;">
+    <div class="container-content row bg-white px-3 py-5 " style="border-radius: 15px; border-bottom-right-radius: 100px;">
+      <div class="date-input-container d-flex justify-content-center col-12 col-sm-9 p-0">
+        <div class="date-input-content mx-2">
+          <label class="date-input-label text-uppercase text-secondary fw-bold mb-1" for="dayInput" style="letter-spacing: 0.3em; font-size: 11px;">day</label>
+          <input class="date-input form-control focus-ring fs-4" type="text" id="dayInput" placeholder="DD">
+          <div class="text-danger fst-italic mt-1" id="invalid-feedback-day" style="font-size: 11px"></div>
+        </div>
+        <div class="date-input-content mx-2">
+          <label class="date-input-label text-uppercase text-secondary fw-bold mb-1" for="monthInput" style="letter-spacing: 0.3em; font-size: 11px">month</label>
+          <input class="date-input form-control focus-ring fs-4" type="text" id="monthInput" placeholder="MM">
+          <div class="text-danger fst-italic mt-1" id="invalid-feedback-month" style="font-size: 11px"></div>
+        </div>
+        <div class="date-input-content mx-2">
+          <label class="date-input-label text-uppercase text-secondary fw-bold mb-1" for="yearInput" style="letter-spacing: 0.3em; font-size: 11px">year</label>
+          <input class="date-input form-control focus-ring fs-4" type="text" id="yearInput" placeholder="YYYY">
+          <div class="text-danger fst-italic mt-1" id="invalid-feedback-year" style="font-size: 11px"></div>
+        </div>
+      </div>
+      <div class="button-container container-fluid d-flex justify-content-center align-items-center col-12 position-relative">
+        <hr class="text-secondary w-100 ">
+        <div class="calculateAgeButton btn rounded-circle d-flex justify-content-center align-items-center p-3" style="background-color: #854dfe; max-width: 80px; max-height: 80px;">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </div>
+
+      </div>
+      <div class="age-result col-12">
+        <p class="mb-0" style="font-family: 'Poppins-ExtraBoldItalic'; font-size: 60px"><span class="age-result me-1" id="yearOutput" style="color: #854dfe">- -</span>years</p>
+        <p class="mb-0" style="font-family: 'Poppins-ExtraBoldItalic'; font-size: 60px"><span class="age-result me-1" id="monthOutput" style="color: #854dfe">- -</span>months</p>
+        <p class="mb-0" style="font-family: 'Poppins-ExtraBoldItalic'; font-size: 60px"><span class="age-result me-1" id="dayOutput" style="color: #854dfe">- -</span>days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/KarimChehab2003">Karim Chehab</a>.
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
