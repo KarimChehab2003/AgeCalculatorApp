@@ -114,7 +114,7 @@ calculateAgeButton.addEventListener('click', () => {
             if (previousMonth < 1) {
                 previousMonth = 12;
             }
-            const daysInPreviousMonth = new Date(currentYear, previousMonth, 0).getDate();
+            const daysInPreviousMonth = new Date(date.getFullYear(), previousMonth, 0).getDate();
             dayDifference += daysInPreviousMonth;
         }
 
